@@ -1,13 +1,25 @@
 
 /*Change an image on hover = content: url("Pictures/Test2.png")*/
-/* #2b8f8dff Greed blue color */
+/* #2b8f8dff Green blue color */
+
+/*:root {
+    --background-BlackAlpha: #0000004d
+}*/
+
+html {
+    height: 100%;
+}
 
 body {
-  background-image: url('Pictures/WebBG.png');
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-size: cover;
-  background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    background-image: url('Pictures/WebBG.png');
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 nav {
@@ -18,12 +30,14 @@ nav {
     align-items: center;
     background-color: #234f74ff;
     border: 3px solid #d99300ff;
-    width: 80%;
+    width: 100%;
     height: 150px;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-nav a {
+nav div {
     height: 100%;
 }
 
@@ -36,18 +50,30 @@ nav img:hover {
     filter: hue-rotate(180deg);
 }
 
+#background {
+    display: flex;
+    flex: 0.9;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#center {
+    display: block;
+    width: 80%;
+}
+
 #main {
     background-color: #234f74ff;
     border: 3px solid #d99300ff;
-    width: 75%;
+    width: 85%;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 #aboutMe {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-shadow: rgb(219, 142, 27);
+    padding: 20px;
 }
 
 #aboutBG {
@@ -57,11 +83,42 @@ nav img:hover {
     border: 3px solid #2b8f8dff;
 }
 
+#aboutBG p {
+    color: #342300ff;
+    text-shadow: 1px 1px 2px #d99300ff;
+}
+
 #projectList {
     display: none;
     align-items: center;
     justify-content: left;
     overflow-x: auto;
+}
+
+common-footer {
+    flex: 0.1;
+    height: 100%;
+    background-color: #234f74ff;
+    color: white;
+    padding-left: 10px;
+}
+
+common-footer a:link {
+    color: #39b1ccff
+}
+
+common-footer a:visited {
+    color: #d99300ff
+}
+
+.side {
+    display: block;
+    width: 10%;
+    background-color: black;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 table {
